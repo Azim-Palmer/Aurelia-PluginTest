@@ -17,6 +17,7 @@ System.config({
 
 System.config({
   "map": {
+    "BeIntrepid/dash-core": "github:BeIntrepid/dash-core@master",
     "aurelia-animator-css": "github:aurelia/animator-css@0.2.0",
     "aurelia-bootstrapper": "github:aurelia/bootstrapper@0.12.0",
     "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.7.1",
@@ -29,7 +30,8 @@ System.config({
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.12",
     "dash-component": "github:BeIntrepid/dash-component@0.0.2",
-    "dash-core": "github:BeIntrepid/dash-core@0.0.1",
+    "dash-core": "github:beintrepid/dash-core@master",
+    "dash-transform": "github:beintrepid/dash-transform@master",
     "font-awesome": "npm:font-awesome@4.3.0",
     "traceur": "github:jmcriffey/bower-traceur@0.0.88",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
@@ -137,6 +139,10 @@ System.config({
       "aurelia-path": "github:aurelia/path@0.6.1",
       "aurelia-task-queue": "github:aurelia/task-queue@0.4.0",
       "core-js": "npm:core-js@0.9.18"
+    },
+    "github:beintrepid/dash-transform@master": {
+      "jquery": "github:components/jquery@2.1.4",
+      "linq-es6": "npm:linq-es6@0.2.1"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
