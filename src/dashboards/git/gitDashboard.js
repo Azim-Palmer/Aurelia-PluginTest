@@ -11,7 +11,8 @@ export class gitDashboard{
 
     var componentsForCompose = [
       //{id: 1, viewModel:'dash-component/components/baseComponent/baseComponent'}
-      {id: 1, viewModel:'dash-github/components/singleValueComponent/GitSingleValueComponent'}
+      {id: 1, viewModel:'dash-github/components/singleValueComponent/gitSingleValueComponent'},
+      {id: 1, viewModel:'dash-github/components/imageGrid/imageGrid'}
     ];
 
     this.layout.path = 'dash-component/layouts/floatLayout/floatLayout';
