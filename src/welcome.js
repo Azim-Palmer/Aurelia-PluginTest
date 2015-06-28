@@ -3,18 +3,28 @@ import {serviceLocator} from 'dash-core'
 export class welcome{
 
   components = [];
-
+  layout = {};
 
   constructor () {
-    var modelLoader =  serviceLocator.services.componentLoader;
 
-    var componentPromise = modelLoader
-                            .loadComponentsForCompose([{id: 1, viewModel:'components/testComponent/testComponent'}])
-                            .then((c)=>{
-                                c.forEach((com)=> {
-                                  this.components.push(com);
-                                });
-                            });
+    var componentsForCompose = [
+      //{id: 1, viewModel:'dash-component/components/baseComponent/baseComponent'}
+      {id: 1, viewModel:'components/testComponent/testComponent'},
+      {id: 1, viewModel:'components/testComponent/testComponent'},
+      {id: 1, viewModel:'components/testComponent/testComponent'},
+      {id: 1, viewModel:'components/testComponent/testComponent'},
+      {id: 1, viewModel:'components/testComponent/testComponent'},
+      {id: 1, viewModel:'components/testComponent/testComponent'},
+      {id: 1, viewModel:'components/testComponent/testComponent'},
+      {id: 1, viewModel:'components/testComponent/testComponent'},
+      {id: 1, viewModel:'components/testComponent/testComponent'},
+      {id: 1, viewModel:'components/testComponent/testComponent'},
+      {id: 1, viewModel:'components/testComponent/testComponent'}
+    ];
+
+    this.layout.path = 'dash-component/layouts/floatLayout/floatLayout';
+    this.layout.model = {componentsForCompose : componentsForCompose};
+
   }
 
   activate(params) {

@@ -7,15 +7,13 @@ export class App {
 
   constructor()
   {
-    serviceLocator.services.componentLoader = new componentLoader();
-    serviceLocator.services.componentModelLoader = new componentModelLoader();
-
     this.insertComponentModels();
+    serviceLocator.services.chromeComponentInfo.path = 'dash-component' + serviceLocator.services.chromeComponentInfo.path;
   }
 
   insertComponentModels()
   {
-    serviceLocator.services.componentModelLoader.models[1] = { id:1, ConfigurationProperties : {}, LayoutInfo : {} };
+    serviceLocator.services.componentModelLoader.models[1] = { id:1, configurationProperties : {}, layoutInfo : {} };
   }
 
   configureRouter(config, router){

@@ -4,11 +4,9 @@
 
     <!--<require from="components/consumption/consumption-component"></require>-->
 
-    <div repeat.for="component of components">
-      <compose model.bind="component"
-               view-model="${component.viewModel}">
+      <compose model.bind="layout.model"
+               view-model="${layout.path}">
       </compose>
-    </div>
     <!--<consumption-component></consumption-component>-->
   </section>
 </template>

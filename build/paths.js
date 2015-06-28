@@ -7,6 +7,7 @@ module.exports = {
   root: appRoot,
   source: appRoot + '**/*.js',
   html: appRoot + '**/*.html',
+  jspm_modules: 'jspm_modules/' + '**/**',
   style: 'styles/**/*.css',
   output: outputRoot,
   sourceMapRelativePath: '../' + appRoot,
