@@ -1,0 +1,13 @@
+<template>
+  <section>
+    <h2>${heading}</h2>
+
+    <!--<require from="components/consumption/consumption-component"></require>-->
+
+      <compose model.bind="layout.model"
+               view-model="${layout.path}">
+      </compose>
+
+    <!--<consumption-component></consumption-component>-->
+  </section>
+</template>

@@ -30,6 +30,7 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.12",
     "dash-component": "github:beintrepid/dash-component@0.0.2",
     "dash-core": "github:beintrepid/dash-core@0.0.1",
+    "dash-github": "github:beintrepid/dash-github@0.0.1",
     "dash-transform": "github:beintrepid/dash-transform@0.0.2",
     "font-awesome": "npm:font-awesome@4.3.0",
     "traceur": "github:jmcriffey/bower-traceur@0.0.88",
@@ -138,6 +139,9 @@ System.config({
     },
     "github:beintrepid/dash-component@0.0.2": {
       "dash-core": "github:BeIntrepid/dash-core@0.0.1"
+    },
+    "github:beintrepid/dash-github@0.0.1": {
+      "linq-es6": "npm:linq-es6@0.2.1"
     },
     "github:beintrepid/dash-transform@0.0.2": {
       "jquery": "github:components/jquery@2.1.4",

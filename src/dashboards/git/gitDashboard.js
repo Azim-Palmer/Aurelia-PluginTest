@@ -1,6 +1,8 @@
 import {serviceLocator} from 'dash-core'
+import {gitStyle} from 'dash-github/styles/gitStyle.css!css'
+import * as dashGithub from 'dash-github'
 
-export class welcome{
+export class gitDashboard{
 
   components = [];
   layout = {};
@@ -9,17 +11,7 @@ export class welcome{
 
     var componentsForCompose = [
       //{id: 1, viewModel:'dash-component/components/baseComponent/baseComponent'}
-      {id: 1, viewModel:'components/testComponent/testComponent'},
-      {id: 1, viewModel:'components/testComponent/testComponent'},
-      {id: 1, viewModel:'components/testComponent/testComponent'},
-      {id: 1, viewModel:'components/testComponent/testComponent'},
-      {id: 1, viewModel:'components/testComponent/testComponent'},
-      {id: 1, viewModel:'components/testComponent/testComponent'},
-      {id: 1, viewModel:'components/testComponent/testComponent'},
-      {id: 1, viewModel:'components/testComponent/testComponent'},
-      {id: 1, viewModel:'components/testComponent/testComponent'},
-      {id: 1, viewModel:'components/testComponent/testComponent'},
-      {id: 1, viewModel:'components/testComponent/testComponent'}
+      {id: 1, viewModel:'dash-github/components/singleValueComponent/GitSingleValueComponent'}
     ];
 
     this.layout.path = 'dash-component/layouts/floatLayout/floatLayout';

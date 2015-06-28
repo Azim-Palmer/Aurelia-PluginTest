@@ -1,7 +1,7 @@
 import 'bootstrap';
 import 'bootstrap/css/bootstrap.css!';
 import {serviceLocator} from 'dash-core'
-import {componentLoader,componentModelLoader} from 'dash-component'
+import * as dashComponent from 'dash-component'
 
 export class App {
 
@@ -20,9 +20,8 @@ export class App {
     config.title = 'Aurelia';
     //config.addPipelineStep('modelbind',modelbind);
     config.map([
-      { route: ['','welcome'],  moduleId: './welcome',      nav: true, title:'Welcome' },
-      { route: 'flickr',        moduleId: './flickr',       nav: true },
-      { route: 'child-router',  moduleId: './child-router', nav: true, title:'Child Router' }
+      { route: [''],  moduleId: './dashboards/basic/basicDashboard',      nav: true, title:'Basic Dashboard' },
+      { route: ['git'],  moduleId: './dashboards/git/gitDashboard',      nav: true, title:'Git Dashboard' }
     ]);
 
     this.router = router;
