@@ -1,6 +1,6 @@
 import 'bootstrap';
 import 'bootstrap/css/bootstrap.css!';
-import {serviceLocator} from 'dash-core'
+import {ServiceLocator} from 'dash-core'
 import * as dashComponent from 'dash-component'
 
 export class App {
@@ -8,12 +8,12 @@ export class App {
   constructor()
   {
     this.insertComponentModels();
-    serviceLocator.services.chromeComponentInfo.path = 'dash-component' + serviceLocator.services.chromeComponentInfo.path;
+    ServiceLocator.services.chromeComponentInfo.path = 'dash-component' + ServiceLocator.services.chromeComponentInfo.path;
   }
 
   insertComponentModels()
   {
-    serviceLocator.services.componentModelLoader.models[1] = { id:1, configurationProperties : {}, layoutInfo : {} };
+    ServiceLocator.services.componentModelLoader.models[1] = { id:1, configurationProperties : {}, layoutInfo : {} };
   }
 
   configureRouter(config, router){

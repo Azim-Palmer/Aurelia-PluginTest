@@ -1,6 +1,6 @@
 import {serviceLocator} from 'dash-core'
 
-export class basicDashboard{
+export class BasicDashboard{
 
   components = [];
   layout = {};

@@ -137,10 +137,17 @@ System.config({
       "aurelia-task-queue": "github:aurelia/task-queue@0.4.0",
       "core-js": "npm:core-js@0.9.18"
     },
+    "github:beintrepid/dash-component@0.0.1": {
+      "dash-core": "github:BeIntrepid/dash-core@0.0.1"
+    },
     "github:beintrepid/dash-component@0.0.2": {
       "dash-core": "github:BeIntrepid/dash-core@0.0.1"
     },
     "github:beintrepid/dash-github@0.0.1": {
+      "linq-es6": "npm:linq-es6@0.2.1"
+    },
+    "github:beintrepid/dash-transform@0.0.1": {
+      "jquery": "github:components/jquery@2.1.4",
       "linq-es6": "npm:linq-es6@0.2.1"
     },
     "github:beintrepid/dash-transform@0.0.2": {

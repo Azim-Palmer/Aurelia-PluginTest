@@ -1,6 +1,6 @@
-import {baseComponent} from 'dash-component'
+import {BaseComponent} from 'dash-component'
 
-export class testComponent extends baseComponent
+export class TestComponent extends BaseComponent
 {
     constructor()
     {

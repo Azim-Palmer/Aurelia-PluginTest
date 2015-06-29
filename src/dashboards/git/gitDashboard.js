@@ -2,7 +2,7 @@ import {serviceLocator} from 'dash-core'
 import {gitStyle} from 'dash-github/styles/gitStyle.css!css'
 import * as dashGithub from 'dash-github'
 
-export class gitDashboard{
+export class GitDashboard{
 
   components = [];
   layout = {};
