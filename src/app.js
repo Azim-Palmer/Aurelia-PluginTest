@@ -13,14 +13,15 @@ export class App {
 
   insertComponentModels()
   {
-    ServiceLocator.services.componentModelLoader.models[1] = { id:1, configurationProperties : {}, layoutInfo : {} };
+    ServiceLocator.services.componentModelLoader.getModels()[1] = { id:1, configurationProperties : {}, layoutInfo : {} };
   }
 
   configureRouter(config, router){
     config.title = 'Aurelia';
     //config.addPipelineStep('modelbind',modelbind);
     config.map([
-      { route: [''],  moduleId: './dashboards/basic/basicDashboard',      nav: true, title:'Basic Dashboard' },
+      { route: [''],  moduleId: './dashboards/dash/Dashboard',      nav: true, title:'Dash Dashboard' },
+      { route: ['basicDashboard'],  moduleId: './dashboards/basic/basicDashboard',      nav: true, title:'Basic Dashboard' },
       { route: ['git'],  moduleId: './dashboards/git/gitDashboard',      nav: true, title:'Git Dashboard' }
     ]);
 
