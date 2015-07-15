@@ -20,7 +20,7 @@ export class App {
     config.title = 'Aurelia';
     //config.addPipelineStep('modelbind',modelbind);
     config.map([
-      { route: [''],  moduleId: './dashboards/dash/Dashboard',      nav: true, title:'Dash Dashboard' },
+      { route: ['','b/:areaId'],  moduleId: './dashboards/dash/Dashboard',      nav: true, title:'Dash Dashboard' },
       { route: ['basicDashboard'],  moduleId: './dashboards/basic/basicDashboard',      nav: true, title:'Basic Dashboard' },
       { route: ['git'],  moduleId: './dashboards/git/gitDashboard',      nav: true, title:'Git Dashboard' }
     ]);

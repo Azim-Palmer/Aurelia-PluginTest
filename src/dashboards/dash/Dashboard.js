@@ -4,11 +4,11 @@ import * as dashGithub from 'dash-github'
 export class BasicDashboard{
 
   constructor () {
-
-
   }
 
+
   activate(params) {
+    this.model = params;
   }
 
   attached() {
