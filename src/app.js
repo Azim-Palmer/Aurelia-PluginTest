@@ -8,7 +8,47 @@ export class App {
   constructor()
   {
     this.insertComponentModels();
+    this.insertAreaModels();
     ServiceLocator.services.chromeComponentInfo.path = 'dash-component' + ServiceLocator.services.chromeComponentInfo.path;
+  }
+
+  insertAreaModels()
+  {
+
+    // ToDo: Update this as it's been pulled straight out of the baseAreaLoader
+
+    //var mockAreaResponse = new AreaConfiguration();
+    //
+    //mockAreaResponse.areaLayout = new AreaLayout();
+    //mockAreaResponse.areaLayout.viewModel = 'dash-component/layouts/floatLayout/floatLayout';
+    //
+    //var layoutConfig = new LayoutConfiguration();
+    //layoutConfig.viewModel = 'dash-component/layouts/floatLayout/floatLayout';
+    //layoutConfig.componentsForCompose = [
+    //  {id: 1, viewModel:'dash-github/components/singleValueComponent/gitSingleValueComponent'},
+    //  {id: 1, viewModel:'dash-github/components/imageGrid/imageGrid'}
+    //];
+    //
+    //mockAreaResponse.layouts.push(layoutConfig);
+    //
+    //
+    //layoutConfig = new LayoutConfiguration();
+    //layoutConfig.viewModel = 'dash-component/layouts/floatLayout/floatLayout';
+    //layoutConfig.componentsForCompose = [
+    //  {id: 1, viewModel:'components/testComponent/testComponent'},
+    //  {id: 1, viewModel:'components/testComponent/testComponent'},
+    //  {id: 1, viewModel:'components/testComponent/testComponent'},
+    //  {id: 1, viewModel:'components/testComponent/testComponent'},
+    //  {id: 1, viewModel:'components/testComponent/testComponent'},
+    //  {id: 1, viewModel:'components/testComponent/testComponent'},
+    //  {id: 1, viewModel:'components/testComponent/testComponent'},
+    //  {id: 1, viewModel:'components/testComponent/testComponent'},
+    //  {id: 1, viewModel:'components/testComponent/testComponent'},
+    //  {id: 1, viewModel:'components/testComponent/testComponent'},
+    //  {id: 1, viewModel:'components/testComponent/testComponent'}
+    //];
+    //
+    //mockAreaResponse.layouts.push(layoutConfig);
   }
 
   insertComponentModels()
